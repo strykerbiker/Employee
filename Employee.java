@@ -43,12 +43,8 @@ public class Employee{
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        Get value for unpaidHours and HourlyWage
-        set taxes to 30%
-        set hoursWorked to hoursInDay-unpaidHours 
-        set total salary to hoursWorkedxhourlyWage
-        set net pay to total salary-(total salary/taxes)
-        print net pay
+        tax = 0.7;
+        return (unpaidHours*hourlyWage*tax);
     }
 
     /*
