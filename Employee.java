@@ -31,20 +31,34 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        // to be completed
+        if age >= 16 then; 
+            return ("You can drive");
+        else;
+            return ("You must wait "" years to drive");
     }
 
     /*
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        // to be completed
+        Get value for unpaidHours and HourlyWage
+        set taxes to 30%
+        set hoursWorked to hoursInDay-unpaidHours 
+        set total salary to hoursWorkedxhourlyWage
+        set net pay to total salary-(total salary/taxes)
+        print net pay
     }
 
     /*
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        // to be completed
+        Get values for unpaidHours, hourlyWage and fullname 
+        set taxes to 30%
+        set hoursWorked to hoursInDay-unpaidHours
+        set total salary to hoursWorkedxhourlyWage
+        set net pay to total salary-(total salary/taxes)
+        print ("fullname is going to be paied "net pay""
+        set unpaidHours to 0
     }
 }
