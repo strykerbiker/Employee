@@ -31,10 +31,12 @@ public class Employee{
      */
     public boolean canDrive(){
         int age = calculateAge(2025);
-        if age >= 16 then; 
+        if (age >= 16) { 
             return ("You can drive");
-        else;
-            return ("You must wait "" years to drive");
+        }
+            else{
+            return ("You must wait () years to drive");
+        }
     }
 
     /*
