@@ -32,10 +32,10 @@ public class Employee{
     public boolean canDrive(){
         int age = calculateAge(2025);
         if (age >= 16) { 
-            return ("You can drive");
+            System.out.println("You can drive");
         }
             else{
-            return ("You must wait () years to drive");
+            System.out.println("You must wait () years to drive");
         }
     }
 
@@ -43,7 +43,7 @@ public class Employee{
      * Returns the net pay for the outstanding unpaid hours
      */
     private double calculatePay(){
-        tax = 0.7;
+        double tax = 0.7;
         return (unpaidHours*hourlyWage*tax);
     }
 
@@ -51,12 +51,8 @@ public class Employee{
      * Output the payment record and resets unpaid hours
      */
     public void paySalary(){
-        Get values for unpaidHours, hourlyWage and fullname 
-        set taxes to 30%
-        set hoursWorked to hoursInDay-unpaidHours
-        set total salary to hoursWorkedxhourlyWage
-        set net pay to total salary-(total salary/taxes)
-        print ("fullname is going to be paied "net pay""
-        set unpaidHours to 0
+        double pay = calculatePay();
+        System.out.println(fullname+"You have been paied"+pay);
+        unpaidHours = 0;
     }
 }
