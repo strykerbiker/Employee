@@ -33,9 +33,11 @@ public class Employee{
         int age = calculateAge(2025);
         if (age >= 16) { 
             System.out.println("You can drive");
+            return true;
         }
             else{
             System.out.println("You must wait () years to drive");
+            return false;
         }
     }
 
@@ -55,4 +57,14 @@ public class Employee{
         System.out.println(fullname+"You have been paied"+pay);
         unpaidHours = 0;
     }
+    
+    public String fullname(){
+        return fullname;
+    }
+    
+    public void getFullName(){
+        String name = fullname();
+        System.out.println("your name is"+fullname);
+    }
+    
 }
